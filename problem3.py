@@ -1,3 +1,4 @@
+print()
 print("CONVERT DECIMAL NUMBERS TO OCTAL NUMBERS:")
 print()
 dec= int(input("Enter your number:"))
@@ -35,6 +36,8 @@ print("Fibonacci sequence:")
 for j in range(nt):
    print(fib_rec(j))
 print("-------------------------------------------------------")
-print("PRINT THE FIBONACCI SERIES USING THE RECURSIVE METHOD:")
+print("RETURN THE nth VALUE FROM THE FIBONACCI SEQUENCE")
 print()
-
+nth=int(input("Enter the value of n: "))-1
+print(nth,"th value from the Fibonacci sequence is",fib_rec(nth))
+print()
