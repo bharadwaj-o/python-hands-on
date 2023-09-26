@@ -23,5 +23,18 @@ print()
 print("-------------------------------------------------------")
 print("PRINT THE FIBONACCI SERIES USING THE RECURSIVE METHOD:")
 print()
+def fib_rec(n):
+   if n <= 1:
+       return n
+   else:
+       return(fib_rec(n-1) + fib_rec(n-2))
 
+nt =int(input("Enter the number of terms (positive integer): "))
+
+print("Fibonacci sequence:")
+for j in range(nt):
+   print(fib_rec(j))
+print("-------------------------------------------------------")
+print("PRINT THE FIBONACCI SERIES USING THE RECURSIVE METHOD:")
+print()
 
